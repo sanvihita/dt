@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+  <title>Learn</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .section1 {
+      background-color: #1a1a1a;
+    }
+
+    .section2 {
+      background-color: #2c2c2c;
+    }
+
+    .section3 {
+      background-color: #3e3e3e;
+    }
+
+    .section4 {
+      background-color: #505050;
+    }
+
+    .active {
+      background-color: #555;
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .sectionBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 80px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+
+    .sectionBtn:hover {
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #090b11;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Circuit <img src="E-Circuit logo.png" width="35"></a>
+      <a href="login.html"><button type="button" class="btn btn-outline-light" role="link">Login/Register</button></a>
+      <a href="projects.html"><button type="button" class="btn btn-outline-light" role="link">Projects</button></a>
+      <a href="learn.html"><button type="button" class="btn btn-outline-light" role="link">Learn</button></a>
+      <a href="components.html"><button type="button" class="btn btn-outline-light" role="link">Components</button></a>
+      <a href="datasheet.html"><button type="button" class="btn btn-outline-light" role="link">Datasheets</button></a>
+      <a href="index.html"><button type="button" class="btn btn-outline-light" role="link">Home</button></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">E-Circuit</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasheet.html">Datasheets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Guides
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Chat-Box</a></li>
+                <li><a class="dropdown-item" href="#">Collaborate</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login/Register</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- scrollspy -->
+
+  <nav id="navbar">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+    <a href="#section4">Section 4</a>
+  </nav>
+
+  <section id="section1" class="section1">Section 1</section>
+  <section id="section2" class="section2">Section 2</section>
+  <section id="section3" class="section3">Section 3</section>
+  <section id="section4" class="section4">Section 4</section>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+  <button class="sectionBtn" onclick="scrollToSection(1)">1</button>
+  <button class="sectionBtn" onclick="scrollToSection(2)">2</button>
+  <button class="sectionBtn" onclick="scrollToSection(3)">3</button>
+  <button class="sectionBtn" onclick="scrollToSection(4)">4</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      const sectionBtns = document.querySelectorAll('.sectionBtn');
+
+      window.addEventListener('scroll', function () {
+        let current = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+          }
+        });
+
+        if (pageYOffset > 500) {
+          scrollToTopBtn.style.display = 'block';
+        } else {
+          scrollToTopBtn.style.display = 'none';
+        }
+
+        scrollToTopBtn.innerHTML = `Top (${current.substring(7)})`;
+
+        sectionBtns.forEach(btn => {
+          btn.style.display = 'none';
+        });
+
+        document.querySelector(`.sectionBtn:nth-child(${parseInt(current.substring(7))})`).style.display = 'block';
+      });
+    });
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrollToSection(sectionNumber) {
+      const targetSection = document.getElementById(`section${sectionNumber}`);
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+
+  <!-- footer -->
+
+  <footer>
+    <div class="footer-section">
+      <a href="..."><button type="button" class="btn btn-outline-light" role="link">something</button></a>
+    </div>
+    <div class="footer-section">
+      <a href="..."><button type="button" class="btn btn-outline-light" role="link">Contact Us</button>
+        <p>
+          Email: E-Circuit@gmail.com</p>
+      </a>
+    </div>
+    <div class="footer-section">
+      <a href="..."><button type="button" class="btn btn-outline-light" role="link">About Us</button></a>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+    <title>Login/Register</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+    
+    
+    
+    .main-head{
+        height: 150px;
+        background: #FFF;
+       
+    }
+    
+    .sidenav {
+        height: 100%;
+        background-color: #000;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    
+    
+    .main {
+        padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+    }
+    
+    @media screen and (max-width: 450px) {
+        .login-form{
+            margin-top: 10%;
+        }
+    
+        .register-form{
+            margin-top: 10%;
+        }
+    }
+    
+    @media screen and (min-width: 768px){
+        .main{
+            margin-left: 40%; 
+        }
+    
+        .sidenav{
+            width: 40%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+    
+        .login-form{
+            margin-top: 80%;
+        }
+    
+        .register-form{
+            margin-top: 20%;
+        }
+    }
+    
+    
+    .login-main-text{
+        margin-top: 20%;
+        padding: 60px;
+        color: #fff;
+    }
+    
+    .login-main-text h2{
+        font-weight: 300;
+    }
+    
+    .btn-black{
+        background-color: #000 !important;
+        color: #fff;
+    }
+</style>
+
+</head>
+
+<body>
+
+ <!-- Navigation bar -->
+ <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Circuit <img src="E-Circuit logo.png" width="35"></a>
+      <a href="login.html"><button type="button" class="btn btn-outline-light" role="link">Login/Register</button></a>
+      <a href="projects.html"><button type="button" class="btn btn-outline-light" role="link">Projects</button></a>
+      <a href="learn.html"><button type="button" class="btn btn-outline-light" role="link">Learn</button></a>
+      <a href="components.html"><button type="button" class="btn btn-outline-light" role="link">Components</button></a>
+      <a href="datasheet.html"><button type="button" class="btn btn-outline-light" role="link">Datasheets</button></a>
+      <a href="index.html"><button type="button" class="btn btn-outline-light" role="link">Home</button></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">E-Circuit</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasheet.html">Datasheets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Guides
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Chat-Box</a></li>
+                <li><a class="dropdown-item" href="#">Collaborate</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login/Register</a>
+              </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Application<br> Login Page</h2>
+            <p>Login or register from here to access.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form>
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-black">Login</button>
+                  <button type="submit" class="btn btn-secondary">Register</button>
+               </form>
+            </div>
+         </div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

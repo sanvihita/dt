@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+  <title>E-Circuit</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #2e0c0c;
+      color: #573a3a;
+    }
+
+    footer {
+      background-color: #0a0d1b;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Circuit <img src="E-Circuit logo.png" width="35"></a>
+      <a href="login.html"><button type="button" class="btn btn-outline-light" role="link">Login/Register</button></a>
+      <a href="projects.html"><button type="button" class="btn btn-outline-light" role="link">Projects</button></a>
+      <a href="learn.html"><button type="button" class="btn btn-outline-light" role="link">Learn</button></a>
+      <a href="components.html"><button type="button" class="btn btn-outline-light" role="link">Components</button></a>
+      <a href="datasheet.html"><button type="button" class="btn btn-outline-light" role="link">Datasheets</button></a>
+      <a href="index.html"><button type="button" class="btn btn-outline-light" role="link">Home</button></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">E-Circuit</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasheet.html">Datasheets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Guides
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Chat-Box</a></li>
+                <li><a class="dropdown-item" href="#">Collaborate</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login/Register</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousal -->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="electronic img.webp" class="d-block w-100" alt="img">
+      </div>
+      <div class="carousel-item">
+        <img src="Electronic components.png" class="d-block w-100" alt="img">
+      </div>
+      <div class="carousel-item">
+        <img src="Datasheet.jpg" class="d-block w-100" alt="img">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div>
+    <p>
+
+
+
+    </p>
+
+  </div>
+  <!-- cards -->
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <div class="col">
+      <div class="card">
+        <span class="border border-black">
+          <a href="https://www.elprocus.com/know-about-brief-history-of-electronics-and-their-generations/"><img
+              src="evolution.png" class="card-img-top" alt="Evolution of Electronics"></a>
+          <div class="card-body">
+            <h5 class="card-title">!Evolution of Electronics</h5>
+            <p class="card-text">The history of electronics began in 1745 till today in 21st Century, it has made
+              extreme developments</p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <span class="border border-black">
+        <a href="https://www.instructables.com/Basic-Electronics/"><img src="basic elec.jpg" class="card-img-top"
+            alt="Basic Electronics"></a>
+        <div class="card-body">
+          <h5 class="card-title">?Getting Started</h5>
+          <p class="card-text">Are you new to the world of electronic?Here are the all basics you need to know to get
+            started with</p>
+      </span>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <span class="border border-black">
+        <a href="https://www.electronics-lab.com/blog/#google_vignette"><img src="blog.jpg" class="card-img-top"
+            alt="img"></a>
+        <div class="card-body">
+          <h5 class="card-title">Blogs</h5>
+          <p class="card-text">Here are some interesting blogs to keep you up updated</p>
+      </span>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <span class="border border-black">
+        <a href="https://ekeeda.com/blog/job-and-career-opportunities-for-electronics-engineers">
+          <img src="cool pic.jpg" class="card-img-top" alt="img"></a>
+        <div class="card-body">
+          <h5 class="card-title">Electronics as your Career</h5>
+          <p class="card-text">Know what opportunities you can get in Electronics</p>
+      </span>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div>
+    <p>
+
+
+    </p>
+  </div>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="footer-section">
+      <a href="..."><button type="button" class="btn btn-outline-light" role="link">something</button></a>
+    </div>
+    <div class="footer-section">
+      <a href="..."><button type="button" class="btn btn-outline-light" role="link">Contact Us</button>
+        <p>Email: E-Circuit@gmail.com</p>
+      </a>
+    </div>
+    <div class="footer-section">
+      <a href="..."><button type="button" class="btn btn-outline-light" role="link">About Us</button></a>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
